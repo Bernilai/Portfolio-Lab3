@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>Сайт портфолио</title>
+</head>
+<body onload="fullScreen()">
+    <div class="container">
+        <div class="info" id="info">
+            <img class="image" id="photo" src="img/Photo.jpg" alt="Моя фотография" title="Фотография"/>
+            <div class="info_text">
+                <h1>Болотов Илья Дмитриевич</h1>
+                <p>Мне 20 лет</p>
+                <p>В настоящий момент я занимаюсь тем, что грызу гранит науки в МТУСИ</p>
+                <h4>Мои социальные сети</h4>
+                <a href="https://vk.com/git_gut" target="_blank">
+                    ВКонтакте
+                </a>
+                |
+                <a href="https://t.me/Paragven" target="_blank">
+                    Telegram
+                </a>
+                |
+                <a href="https://github.com/Bernilai" target="_blank">
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="card bg-blue">
+            <button class="hobby_btn header_btn" id="hobby_btn">
+                <span>Мои хобби</span>
+            </button>
+            <div class="hobby_list">
+                <ul id="hobby_list">
+                    <li>Компьютерные игры</li>
+                    <li>Чтение</li>
+                    <li>Просмотр фильмов и мультфильмов</li>
+                    <li>Бег</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-green">
+            <button class="schools_btn header_btn" id="schools_btn">
+                <span>Места учёбы</span>
+            </button>
+            <div class="schools_table">
+                <table id="schools_table">
+                    <tr>
+                        <td>МОУ СОШ №16</td>
+                        <td>2010 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>МАОУ СОШ №14</td>
+                        <td>2014 - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>МБОУ "Лицей"</td>
+                        <td>2018 - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Академия ФСБ РФ</td>
+                        <td>2021 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>МТУСИ</td>
+                        <td>2023 - н.в.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card bg-red">
+            <button class="portfolio_btn header_btn" id="portfolio_btn">
+                <span>Открыть портфолио</span>
+            </button>
+            <div class="portfolio_content">
+                <p>Лабораторная работа №2, в рамках которой я сделал калькулятор, основанный на FastAPI</p>
+                <img class="image" id="lab2" src="img/lab2_swagger.png" alt="Итоговый результат лаораторной работы №2" title="Лабораторная работа №2">
+            </div>
+        </div>
+    </div>
+    <div id="fullpage" onclick="this.style.display='none'"></div>
+    <script src="main.js"></script>
+</body>
+</html>

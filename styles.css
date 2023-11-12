@@ -1,0 +1,169 @@
+body {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Roboto Light", sans-serif;
+
+    background-color: #f1f1f1;
+    color: #0f141e;
+}
+
+a {
+    color: #86898f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#photo {
+    width: 225px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info_text {
+    margin-left: 40px;
+}
+
+.info_text h4 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+}
+
+.bg-red {
+    background: #ffcccc;
+}
+
+.bg-green{
+    background: #b3ffb3;
+}
+
+.bg-blue {
+    background: #ccccff;
+}
+
+.card {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.header_btn {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.hobby_list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 600ms;
+}
+
+.hobby_list.active {
+    max-height: 1000px;
+}
+
+#hobby_list {
+    padding: 0 15px;
+    margin: 10px;
+}
+
+.hobby_list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.schools_table {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 600ms;
+}
+
+.schools_table.active {
+    max-height: 1000px;
+}
+
+#schools_table {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.schools_table td {
+    padding-bottom: 10px;
+}
+
+.schools_table td:nth-child(2) {
+    color: #86898f;
+}
+
+.portfolio_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 600ms;
+}
+
+.portfolio_content p {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.portfolio_content.active {
+    max-height: 1000px;
+}
+
+.portfolio_content.active p {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+#lab2 {
+    max-width: 700px;
+}
+
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+}
